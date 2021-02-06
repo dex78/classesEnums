@@ -6,9 +6,9 @@ package components;
 public enum DeviceTrackComponentNoOFFSET implements DeviceTrackComponent {
 
     /** Represents the position of this device's clock, relative to position's of other devices. */
-    POSITION(0, DeviceTrackComponentOFFSET.POSITION.getInitialNoise()),
+    POSITION(INDEX_POSITION, INITIAL_NOISE_POSITION),
     /** The second order (change over time) velocity component of POSITION. */
-    VELOCITY(1, DeviceTrackComponentOFFSET.VELOCITY.getInitialNoise());
+    VELOCITY(INDEX_VELOCITY, INITIAL_NOISE_VELOCITY);
 
     private final int index;
     private final double initialNoise;
